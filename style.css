@@ -7,7 +7,6 @@ body {
 
 .container {
     display: flex;
-    flex-wrap: wrap;
     padding: 20px;
     gap: 20px;
 }
@@ -68,8 +67,10 @@ button[type="submit"]:hover {
 
 
 .item {
+    
     background-color: #ffffff;
-    padding: 97px;
+    padding: 50px;
+    max-width: 350px;
     flex-direction: row;
     flex-wrap: nowrap;
     border-radius: 8px;
@@ -79,8 +80,11 @@ button[type="submit"]:hover {
 }
 
 .item-box {
+    display: flex;
     margin-bottom: 10px;
     height: min-content;
+    flex-wrap: wrap;
+    
 }
 
 img {
