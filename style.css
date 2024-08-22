@@ -5,6 +5,14 @@ body {
     padding: 0;
 }
 
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f7f7f7;
+
+}
 .container {
     display: flex;
     padding: 20px;
@@ -14,20 +22,31 @@ body {
 .container-forma {
     flex-grow: 0;
     min-width: 290px;
+    height: min-content;
     background-color: #ffffff;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.container-forma h2 {
-    text-align: start;
+.product-add h2 {
+    text-align:start;
     flex-wrap:wrap;
     flex-basis: 60%;
     margin-bottom: 20px;
     font-size: 20px;
     color: #333;
 }
+.filter-button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+
 
 .forma {
     margin-bottom: 15px;
@@ -53,7 +72,7 @@ input, select, textarea {
 button[type="submit"] {
     width: 100%;
     padding: 10px;
-    background-color: #4CAF50;
+    background-color: #f7f7f7;
     color: white;
     border: none;
     border-radius: 4px;
@@ -71,23 +90,26 @@ button[type="submit"]:hover {
     background-color: #ffffff;
     padding: 50px;
     max-width: 350px;
+    margin-bottom: 10px;
+    margin-right: 10px;
     flex-direction: row;
     flex-wrap: nowrap;
-    border-radius: 8px;
+    border-radius: 0px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
     position: relative;
+
 }
 
 .item-box {
     display: flex;
-    margin-bottom: 10px;
     height: min-content;
     flex-wrap: wrap;
     
 }
 
 img {
+    
     max-width: 100%;
     border-radius: 8px;
 }
